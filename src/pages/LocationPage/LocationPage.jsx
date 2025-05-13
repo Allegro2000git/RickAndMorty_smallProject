@@ -1,8 +1,9 @@
+import {Title} from "../../common/components/styles/Title.styles.jsx";
 
 export const LocationPage = () => {
     return (
         <div>
-            <h1>LocationPage</h1>
+            <Title fontSize={"70px"}>LocationPage</Title>
         </div>
     );
 };

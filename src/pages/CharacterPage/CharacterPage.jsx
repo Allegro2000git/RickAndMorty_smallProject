@@ -1,9 +1,10 @@
 import {Title} from "../../common/components/styles/Title.styles.jsx";
 
-export const EpisodePage = () => {
+
+export const CharacterPage = () => {
     return (
         <div>
-            <Title fontSize={"70px"}>EpisodePage</Title>
+            <Title fontSize={"70px"}>CharacterPage</Title>
         </div>
     );
 };

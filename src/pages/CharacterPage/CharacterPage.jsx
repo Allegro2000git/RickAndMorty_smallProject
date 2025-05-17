@@ -2,7 +2,7 @@ import {Title} from "../../common/components/styles/Title.styles.jsx";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import styles from './CharacterPage.module.css'
-
+import {Link} from "react-router";
 
 export const CharacterPage = () => {
 
@@ -55,7 +55,7 @@ export const CharacterPage = () => {
                               {characters.map((character) => {
                                   return (
                                       <div className={styles.character} key={character.id}>
-                                          <div className={styles.characterLink}>{character.name}</div>
+                                          <Link to={`/characters/${character.id}`} className={styles.characterLink}>{character.name}</Link>
                                           <img src={character.image} alt={`${character.name} avatar`} />
                                       </div>
                                     )

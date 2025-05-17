@@ -8,9 +8,9 @@ export const HomePage = () => {
             <Title fontSize={"100px"}>The Rick and Morty</Title>
             <nav className={styles.linkWrapper}>
                 <NavLink to={"/characters"} className={"linkButton"}>Characters</NavLink>
-                <NavLink to={"/locations"} className={"linkButton"}>Locations</NavLink>
-                <NavLink to={"/episodes"} className={"linkButton"}>Episodes</NavLink>
+                <NavLink to={"/locations"} className={"linkButton"} >Locations</NavLink>
+                <NavLink to={"/episodes"} className={"linkButton"} >Episodes</NavLink>
             </nav>
         </div>
     );
-};
+}

@@ -15,11 +15,13 @@ export const Character = () => {
         })
     }, [id])
 
-    const statusObject = character?.status === "Alive"
-        ? styles.aliveStatus
-        : character?.status === "Dead"
-            ? styles.deadStatus
-            : styles.unknownStatus
+    const statusStyles = {
+        Alive: styles.aliveStatus,
+        Dead: styles.deadStatus,
+        unknown: styles.unknownStatus
+    };
+
+    const statusObject = statusStyles[character?.status] || styles.unknownStatus;
 
     return (
         <div className={"pageContainer"}>
